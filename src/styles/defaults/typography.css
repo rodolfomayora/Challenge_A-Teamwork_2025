@@ -1,0 +1,27 @@
+@layer defaults.typography {
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 100 900;
+    src: url("/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+  }
+
+}

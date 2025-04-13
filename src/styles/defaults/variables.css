@@ -1,0 +1,34 @@
+@layer defaults.variables {
+  :root {
+    /* Design limits */
+    --minMobile : 375px;  /* from: 375px  */
+    --maxDesktop: 1920px; /* to  : 1920px */
+
+    /* Mobile First Approach */
+    --minTablet : 768px;  /* Tablet */
+    --minDesktop: 1024px; /* large  */
+  }
+}
+
+@layer defaults.variables {
+  :root {
+    /* fonts */
+    --font-roboto: "Roboto";
+    --font-bebas-neue: "Bebas Neue";
+    
+    /* Colors */
+    --color-orange: #fc593b;
+    --color-orange-dark: #c6442c;
+    --color-black: #222222;
+    --color-black-dark: #0e0b0b;
+    --color-white: #ffffff;
+    --color-gray: #4f4d4d;
+
+    /* Container */
+    --min-mobile-width: var(--minMobile);
+
+    /* header */
+    --mobile-header-height: 64px;
+    --desktop-header-height: 80px;
+  }
+}
