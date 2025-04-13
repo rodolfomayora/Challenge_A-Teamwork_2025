@@ -1,6 +1,11 @@
 .Header {
-  background-color: var(--color-black);
+  --shadow-orange: 0 2px 8px 2px var(--color-orange); 
+  position: sticky;
+  top: 0;
+  z-index: 10;
   color: var(--color-white);
+  background-color: var(--color-black);
+  box-shadow: var(--shadow-orange);
 }
 
 .container {
@@ -11,14 +16,11 @@
 }
 
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 98px;
-}
-
-.desktopNavigationWrapper {
-  display: none;
 }
 
 .logoWrapper {
@@ -34,6 +36,43 @@
   aspect-ratio: 1 / 1;
   width: 34px;
   padding-top: 2px;
+}
+
+.mobileNavigationWrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--color-black);
+  box-shadow: var(--shadow-orange);
+}
+
+.mobileNavigationWrapper[data-expanded="true"] {
+  display: block;
+}
+
+.mobileNavigation {
+  list-style: none;
+  padding-block: 32px;
+  display: grid;
+  row-gap: 32px;
+  text-align: center;
+}
+
+.desktopNavigationWrapper {
+  display: none;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: var(--color-white);
+}
+
+.link:hover {
+  color: var(--color-orange);
 }
 
 @media only screen and (min-width:768px) {
@@ -63,6 +102,14 @@
     height: 86px;
   }
 
+  .logo {
+    width: 170px;
+  }
+
+  .toggleButton {
+    display: none;
+  }
+
   .desktopNavigationWrapper {
     display: initial;
   }
@@ -74,22 +121,7 @@
     margin-bottom: 2px;
   }
 
-  .desktopNavigation .link {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1.2px;
-    color: var(--color-white);
-  }
-  
-  .desktopNavigation .link:hover {
-    color: var(--color-orange);
-  }
-
-  .logo {
-    width: 170px;
-  }
-
-  .toggleButton {
+  .mobileNavigationWrapper[data-expanded="true"] {
     display: none;
   }
 }
