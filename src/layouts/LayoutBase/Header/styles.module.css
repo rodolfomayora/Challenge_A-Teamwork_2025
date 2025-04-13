@@ -15,6 +15,13 @@
   justify-content: space-between;
   align-items: center;
   height: 98px;
+}
+
+.desktopNavigationWrapper {
+  display: none;
+}
+
+.logoWrapper {
   padding-top: 4px;
 }
 
@@ -26,6 +33,7 @@
 .toggleButton {
   aspect-ratio: 1 / 1;
   width: 34px;
+  padding-top: 2px;
 }
 
 @media only screen and (min-width:768px) {
@@ -53,6 +61,28 @@
 
   .navigation {
     height: 86px;
+  }
+
+  .desktopNavigationWrapper {
+    display: initial;
+  }
+
+  .desktopNavigation {
+    list-style: none;
+    display: inline-flex;
+    column-gap: 30px;
+    margin-bottom: 2px;
+  }
+
+  .desktopNavigation .link {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: var(--color-white);
+  }
+  
+  .desktopNavigation .link:hover {
+    color: var(--color-orange);
   }
 
   .logo {
