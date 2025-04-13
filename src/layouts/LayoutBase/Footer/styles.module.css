@@ -7,21 +7,27 @@
   display: grid;
   row-gap: 20px;
   padding: 40px 20px;
+  grid-template-columns: 1fr;
+
 }
 
 .footerBottom {
   display: grid;
   row-gap: 40px;
   padding: 20px;
+  border-top: solid 1px var(--color-white);
 }
 
-.block,
+.about,
+.social,
 .newsletter {
   display: grid;
+  align-content: start;
   row-gap: 20px;
 }
 
-.block {
+.about,
+.social {
   justify-items: center;
 }
 
@@ -33,7 +39,8 @@
 .linkList {
   list-style: none;
   display: flex;
-  column-gap: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .link {
@@ -51,6 +58,38 @@
   text-align: center;
 }
 
-@media only screen and (min-width:768px) {}
+@media only screen and (min-width:768px) {
+  .footerTop {
+    grid-template-columns: 1fr 250px;
+    column-gap: 40px;
+  }
 
-@media only screen and (min-width:1024px) {}
+  .about,
+  .social {
+    justify-items: flex-start;
+  }
+
+  .social {
+    padding-right: 70px;
+  }
+
+  .newsletter {
+    grid-column-start: 2 span;
+  }
+
+}
+
+@media only screen and (min-width:1024px) {
+  .footerTop {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+
+  .footerBottom {
+    border-top: none;
+  }
+
+  .newsletter {
+    grid-column-start: 1 span;
+  }
+}

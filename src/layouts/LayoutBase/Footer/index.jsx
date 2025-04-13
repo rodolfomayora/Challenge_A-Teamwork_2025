@@ -6,14 +6,14 @@ export function Footer() {
   return (
     <footer className={styles.Footer}>
       <div className={styles.footerTop}>
-        <div className={styles.block}>
+        <div className={styles.about}>
           <h4>ABOUT</h4>
           <p>Vrume’s team has been working in the performance marketing industry since 2001. We
           are a passionate team of professionals that love the challenges the online space provides. We are
           here to help our clients and look forward to helping you.</p>
         </div>
 
-        <nav className={styles.block}>
+        <nav className={styles.social}>
           <h4>SOCIAL</h4>
           <ul className={styles.linkList}>
             <li>
@@ -75,8 +75,6 @@ export function Footer() {
           </form>
         </div>
       </div>
-
-      <hr />
 
       <div className={styles.footerBottom}>
         <address className={styles.address}>Platform @ The Junction. 5 Edinburgh Rd S Guelph, Ont N1H 5N8, Canada</address>
