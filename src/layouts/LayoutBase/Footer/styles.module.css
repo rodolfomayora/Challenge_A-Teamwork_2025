@@ -1,0 +1,56 @@
+.Footer {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.footerTop {
+  display: grid;
+  row-gap: 20px;
+  padding: 40px 20px;
+}
+
+.footerBottom {
+  display: grid;
+  row-gap: 40px;
+  padding: 20px;
+}
+
+.block,
+.newsletter {
+  display: grid;
+  row-gap: 20px;
+}
+
+.block {
+  justify-items: center;
+}
+
+.newsletterForm {
+  display: grid;
+  row-gap: 10px;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.link {
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  width: 34px;
+}
+
+.address {
+  border-top: solid 1px var(--color-orange);
+  padding-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media only screen and (min-width:768px) {}
+
+@media only screen and (min-width:1024px) {}

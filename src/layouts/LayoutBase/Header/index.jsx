@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { Container } from './Container';
+import { Container } from '@/components/Container';
 import { MobileNavigationMenu } from './MobileNavigationMenu';
 import { MobileNavigationButton } from './MobileNavigationButton';
 import { Links } from './Links';

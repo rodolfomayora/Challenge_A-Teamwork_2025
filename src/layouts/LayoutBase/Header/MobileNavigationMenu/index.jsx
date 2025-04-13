@@ -1,5 +1,5 @@
 import { Links } from '../Links';
-import { Container } from '../Container';
+import { Container } from '@/components/Container';
 import styles from './styles.module.css';
 
 export function MobileNavigationMenu() {
