@@ -1,0 +1,65 @@
+.Header {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.container {
+  box-sizing: content-box;
+  margin-inline: auto;
+  padding-inline: 16px;
+  max-width: 1140px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  padding-top: 4px;
+}
+
+.logo {
+  aspect-ratio: 140 / 50;
+  width: 140px;
+}
+
+.toggleButton {
+  aspect-ratio: 1 / 1;
+  width: 34px;
+}
+
+@media only screen and (min-width:768px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .navigation {
+    height: 58px;
+  }
+
+  .logo {
+    width: 112px;
+  }
+
+  .toggleButton {
+    width: 20px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .container {
+    padding-inline: 48px;
+  }
+
+  .navigation {
+    height: 86px;
+  }
+
+  .logo {
+    width: 170px;
+  }
+
+  .toggleButton {
+    display: none;
+  }
+}
