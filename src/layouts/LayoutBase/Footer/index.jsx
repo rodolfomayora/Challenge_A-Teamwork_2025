@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 export function Footer() {
   return (
     <footer className={styles.Footer}>
+      {/* Footer Top */}
       <div className={styles.footerTop}>
         <div className={styles.aboutWapper}>
           <h4 className={styles.title}>ABOUT</h4>
@@ -24,6 +25,7 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Footer bottom */}
       <div className={styles.footerBottom}>
         <address className={styles.address}>Platform @ The Junction. 5 Edinburgh Rd S Guelph, Ont N1H 5N8, Canada</address>
         <small className={styles.copyright}>Copyright © 2024 Vrume. All rights reserved.</small>

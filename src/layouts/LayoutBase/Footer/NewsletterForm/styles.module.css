@@ -1,6 +1,6 @@
 .NewsletterForm {
   display: grid;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .label {
@@ -19,4 +19,15 @@
   font-size: 16px;
   border: solid 2px transparent;
   cursor: pointer;
+}
+
+@media only screen and (min-width:768px) {
+  .NewsletterForm {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
+  .input {
+    --height: 46px;
+  }
 }

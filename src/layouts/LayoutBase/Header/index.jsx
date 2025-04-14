@@ -33,7 +33,8 @@ export function Header() {
             </ul>
           </div>
           
-          <div className={styles.mobileButtonWrapper}> {/* menu mobile button */}
+          {/* menu mobile button */}
+          <div className={styles.mobileButtonWrapper}>
             <MobileNavigationButton
               isExpanded={isExpanded}  
               onClick={handleToggle}

@@ -1,5 +1,4 @@
 .Header {
-  --shadow-orange: 0 2px 8px 2px var(--color-orange); 
   position: sticky;
   top: 0;
   z-index: 10;

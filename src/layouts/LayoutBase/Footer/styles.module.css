@@ -5,9 +5,10 @@
 
 .footerTop {
   display: grid;
-  row-gap: 28px;
-  padding: 51px 10px 21px;
   grid-template-columns: 1fr;
+  row-gap: 28px;
+  padding-block: 51px 21px;
+  padding-inline: 10px;
   border-top: solid 1px var(--color-gray);
 }
 
@@ -63,28 +64,42 @@
 
 @media only screen and (min-width:768px) {
   .footerTop {
-    grid-template-columns: 1fr 250px;
-    column-gap: 40px;
+    grid-template-columns: 1fr 186px;
+    column-gap: 28px;
+    row-gap: 0;
+    padding-inline: 38px;
+    box-sizing: content-box;
+    margin-inline: auto;
+    padding-top: 50px;
+    max-width: 1140px;
   }
 
   .aboutWapper,
   .socialWrapper {
-    justify-items: flex-start;
+    justify-items: start;
   }
 
-  .socialWrapper {
-    padding-right: 70px;
+  .aboutWapper {
+    padding-bottom: 28px;
   }
 
   .newsletterWrapper {
     grid-column-start: 2 span;
+  }
+
+  .address {
+    padding-right: 52%;
+  }
+
+  .footerBottom {
+    row-gap: 20px;
   }
 }
 
 @media only screen and (min-width:1024px) {
   .footerTop {
     grid-template-columns: repeat(3, 1fr);
-    
+    padding-inline: 48px;
   }
 
   .footerBottom {
