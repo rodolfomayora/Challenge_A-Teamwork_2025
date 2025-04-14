@@ -5,52 +5,149 @@
 
 .footerTop {
   display: grid;
-  row-gap: 20px;
-  padding: 40px 20px;
+  grid-template-columns: 1fr;
+  row-gap: 28px;
+  padding-block: 51px 21px;
+  padding-inline: 10px;
+  border-top: solid 1px var(--color-gray);
+}
+
+.title {
+  line-height: 1;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.aboutWapper,
+.socialWrapper {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  row-gap: 22px;
+}
+
+.about {
+  font-size: 13px;
+  word-spacing: -0.7px;
+  line-height: 1.4;
+}
+
+.newsletterWrapper {
+  display: grid;
+  align-content: start;
+  row-gap: 14px;
 }
 
 .footerBottom {
   display: grid;
-  row-gap: 40px;
-  padding: 20px;
-}
-
-.block,
-.newsletter {
-  display: grid;
-  row-gap: 20px;
-}
-
-.block {
-  justify-items: center;
-}
-
-.newsletterForm {
-  display: grid;
-  row-gap: 10px;
-}
-
-.linkList {
-  list-style: none;
-  display: flex;
-  column-gap: 20px;
-}
-
-.link {
-  display: inline-block;
-  aspect-ratio: 1 / 1;
-  width: 34px;
+  border-top: solid 1px var(--color-gray);
+  row-gap: 60px;
+  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-inline: 14px;
 }
 
 .address {
   border-top: solid 1px var(--color-orange);
   padding-top: 10px;
+  padding-inline: 10px;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.4px;
 }
 
 .copyright {
+  font-size: 12px;
+  letter-spacing: 0.3px;
   text-align: center;
 }
 
-@media only screen and (min-width:768px) {}
+@media only screen and (min-width:768px) {
+  .footerTop {
+    grid-template-columns: 1fr 186px;
+    column-gap: 28px;
+    row-gap: 0;
+    padding-inline: 38px;
+    box-sizing: content-box;
+    margin-inline: auto;
+    padding-top: 50px;
+    max-width: 1140px;
+  }
 
-@media only screen and (min-width:1024px) {}
+  .aboutWapper,
+  .socialWrapper {
+    justify-items: start;
+  }
+
+  .aboutWapper {
+    padding-bottom: 28px;
+  }
+
+  .newsletterWrapper {
+    grid-column-start: 2 span;
+  }
+
+  .address {
+    padding-right: 52%;
+  }
+
+  .footerBottom {
+    row-gap: 20px;
+    box-sizing: content-box;
+    padding-inline: 38px;
+    margin-inline: auto;
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .footerTop {
+    grid-template-columns: 280px auto 362px;
+    justify-content: space-between;
+    row-gap: 28px;
+    padding-block: 48px 14px;
+    padding-inline: 48px;
+  }
+
+  .title {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+  }
+
+  .aboutWapper,
+  .socialWrapper {
+    row-gap: 20px;
+  }
+
+  .aboutWapper {
+    padding-bottom: 0;
+  }
+
+  .socialWrapper {
+    margin-right: 16px;
+  }
+
+  .newsletterWrapper {
+    grid-column-start: 1 span;
+  }
+
+  .about {
+    font-size: 12px;
+    word-spacing: 0;
+    line-height: 1.5;
+  }
+
+  .footerBottom {
+    row-gap: 18px;
+    border-top: none;
+  }
+
+  .address {
+    font-size: 11px;
+    word-spacing: 0.6px;
+  }
+
+  .copyright {
+    letter-spacing: 0;
+  }
+}
