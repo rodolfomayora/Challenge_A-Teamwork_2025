@@ -67,18 +67,23 @@ export function Footer() {
         <div className={styles.newsletter}>
           <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
           <form className={styles.newsletterForm}>
-            <label style={{ display: 'grid' }}>
+            <label className={styles.emailLabel}>
               <span>Email</span>
-              <input type="text" />
+              <input type="text" className={styles.emailInput} />
             </label>
-            <button>SUBMIT</button>
+            <button
+              className={styles.button}
+              type="button"
+            >
+              SUBMIT
+            </button>
           </form>
         </div>
       </div>
 
       <div className={styles.footerBottom}>
         <address className={styles.address}>Platform @ The Junction. 5 Edinburgh Rd S Guelph, Ont N1H 5N8, Canada</address>
-        <small className={styles.copyright}>Copyright © 2024 Vrume. All rights reserved</small>
+        <small className={styles.copyright}>Copyright © 2024 Vrume. All rights reserved.</small>
       </div>
     </footer>
   );

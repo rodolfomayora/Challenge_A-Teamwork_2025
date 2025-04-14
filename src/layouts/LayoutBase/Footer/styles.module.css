@@ -5,17 +5,25 @@
 
 .footerTop {
   display: grid;
-  row-gap: 20px;
-  padding: 40px 20px;
+  row-gap: 28px;
+  padding: 51px 10px 21px;
   grid-template-columns: 1fr;
+  border-top: solid 1px var(--color-gray);
+}
 
+.footerTop h4 {
+  line-height: 1;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 
 .footerBottom {
   display: grid;
-  row-gap: 40px;
-  padding: 20px;
-  border-top: solid 1px var(--color-white);
+  border-top: solid 1px var(--color-gray);
+  row-gap: 60px;
+  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-inline: 14px;
 }
 
 .about,
@@ -23,7 +31,15 @@
 .newsletter {
   display: grid;
   align-content: start;
-  row-gap: 20px;
+}
+
+.about,
+.social {
+  row-gap: 22px;
+}
+
+.newsletter {
+  row-gap: 14px;
 }
 
 .about,
@@ -31,30 +47,78 @@
   justify-items: center;
 }
 
+.about p {
+  font-size: 13px;
+  word-spacing: -0.7px;
+  line-height: 1.4;
+}
+
 .newsletterForm {
   display: grid;
-  row-gap: 10px;
+  row-gap: 20px;
+}
+
+.emailLabel {
+  display: grid;
+  row-gap: 8px;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+
+.emailInput {
+  --height: 50px;
+  height: var(--height);
+  border-radius: calc(var(--height) / 2);
+  padding-inline: calc(var(--height) / 2);
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+
+.button {
+  --height: 46px;
+  height: var(--height);
+  border-radius: calc(var(--height) / 2);
+  padding-inline: calc(var(--height) / 2);
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: solid 1px transparent;
+  cursor: pointer;
 }
 
 .linkList {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 23px;
   flex-wrap: wrap;
 }
 
 .link {
   display: inline-block;
   aspect-ratio: 1 / 1;
-  width: 34px;
+  width: 32px;
+  line-height: 0;
+}
+
+.linkList li {
+  line-height: 0;
 }
 
 .address {
   border-top: solid 1px var(--color-orange);
   padding-top: 10px;
+  padding-inline: 10px;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.4px;
 }
 
 .copyright {
+  font-size: 12px;
+  letter-spacing: 0.3px;
   text-align: center;
 }
 
