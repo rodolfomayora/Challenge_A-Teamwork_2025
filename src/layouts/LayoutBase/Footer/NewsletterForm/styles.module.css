@@ -1,0 +1,22 @@
+.NewsletterForm {
+  display: grid;
+  row-gap: 20px;
+}
+
+.label {
+  display: grid;
+  row-gap: 8px;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+
+.input {
+  --height: 50px;
+  height: var(--height);
+  border-radius: calc(var(--height) / 2);
+  padding-inline: calc(var(--height) / 2);
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  border: solid 2px transparent;
+  cursor: pointer;
+}

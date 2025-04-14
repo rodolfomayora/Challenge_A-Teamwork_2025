@@ -1,0 +1,21 @@
+.SocialLinks {
+  list-style: none;
+  display: flex;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+
+.SocialLinks > * {
+  line-height: 0;
+}
+
+.Link {
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  width: 32px;
+  line-height: 0;
+}
+
+.Link:hover {
+  scale: 1.1;
+}
