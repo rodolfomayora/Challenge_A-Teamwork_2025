@@ -14,17 +14,28 @@
   --height: 50px;
   height: var(--height);
   border-radius: calc(var(--height) / 2);
-  padding-inline: calc(var(--height) / 2);
+  padding-inline: 14px;
   letter-spacing: 0.4px;
   font-size: 16px;
   border: solid 2px transparent;
   cursor: pointer;
+  width: 100%;
 }
 
 @media only screen and (min-width:768px) {
   .NewsletterForm {
     grid-template-columns: 1fr auto;
     align-items: end;
+  }
+
+  .input {
+    --height: 46px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .NewsletterForm {
+    column-gap: 14px;
   }
 
   .input {

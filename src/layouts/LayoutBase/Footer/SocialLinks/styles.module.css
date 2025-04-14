@@ -19,3 +19,9 @@
 .Link:hover {
   scale: 1.1;
 }
+
+@media only screen and (min-width:1024px) {
+  .SocialLinks {
+    column-gap: 20px;
+  }
+}

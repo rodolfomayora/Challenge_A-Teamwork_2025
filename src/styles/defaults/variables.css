@@ -24,6 +24,9 @@
     --color-white: #ffffff;
     --color-gray: #4f4d4d;
 
+    /* shadows */
+    --shadow-orange: 0 4px 5px -2px var(--color-orange);
+
     /* Container */
     --min-mobile-width: var(--minMobile);
 
