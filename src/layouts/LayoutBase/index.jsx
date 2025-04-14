@@ -5,7 +5,7 @@ export function LayoutBase({ children }) {
   return (
     <>
       <Header />
-      <main style={{ height: '3746px' }}>
+      <main>
         {children}
       </main>
       <Footer />
