@@ -1,0 +1,12 @@
+.TagTitleSection {
+  composes: TagTitle from "@/components/TagTitle/styles.module.css";
+  min-width: 214px;
+  height: 36px;
+  color: var(--color-orange);
+}
+
+@media only screen and (min-width:768px) {
+  .TagTitleSection {
+    min-width: 202px;
+  }
+}

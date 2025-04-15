@@ -1,73 +1,45 @@
-.tagTitle {
-  display: grid;
-  place-content: center;
-  height: 36px;
-  width: 214px;
-  border-radius: 18px;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  background: transparent;
-  border: solid 1px var(--color-orange);
-}
-
-.btn {
-  letter-spacing: -0.3px;
-  word-spacing: 1px;
-  padding-inline: 26px;
-}
-
-.text {
-  width: 92%;
-  font-size: 17px;
-  text-align: center;
-  letter-spacing: 0.1px;
-  word-spacing: -0.8px;
-  line-height: 1.5;
-
-  margin-bottom: 14px;
-}
-
 .content {
   display: grid;
   justify-items: center;
-  row-gap: 40px;
+  row-gap: 38px;
   padding-block: 68px;
 }
 
 .title {
+  font-size: 43px;
+  letter-spacing: 1.5px;
+  line-height: 1;
   text-align: center;
 }
 
-.info {
+.text {
+  font-size: 16px;
+  line-height: 1.57;
+  letter-spacing: 0.4px;
   text-align: center;
-}
-
-.cardGrid {
-  --gap: 30px;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--gap);
-}
-
-.cardGrid > * {
-  --max-items-per-row: 1;
-  --grids: calc(var(--max-items-per-row) - 1);
-  --diff: var(--gap) / var(--max-items-per-row);
-  width: calc((100% / var(--max-items-per-row)) - ((var(--diff)) * var(--grids)));
-
-  /* max-width: 480px; */
 }
 
 @media only screen and (min-width:768px) {
-  .cardGrid > * {
-    --max-items-per-row: 2;
+  .content {
+    row-gap: 34px;
+    padding-block: 62px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .text {
+    padding-top: 11px;
   }
 }
 
 @media only screen and (min-width:1024px) {
-  .cardGrid > * {
-    --max-items-per-row: 3;
+  .content {
+    padding-block: 64px;
+  }
+
+  .title {
+    letter-spacing: 1.6px;
   }
 }
