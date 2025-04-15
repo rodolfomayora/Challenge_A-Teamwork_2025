@@ -17,7 +17,7 @@ export function Header() {
           
           {/* Vrum logo */}
           <div className={styles.logoWrapper}>
-            <Link href="/">
+            <Link href="/" aria-label="home page">
               <img src="/assets/VRUME-white-with-red-dot.png"
                 className={styles.logo}
                 alt="Vrume Logo"

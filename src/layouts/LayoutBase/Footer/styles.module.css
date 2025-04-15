@@ -107,6 +107,7 @@
     row-gap: 28px;
     padding-block: 48px 14px;
     padding-inline: 48px;
+    border-top: none;
   }
 
   .title {

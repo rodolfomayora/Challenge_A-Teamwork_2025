@@ -1,6 +1,6 @@
 .MobileNavigationMenu {
   background-color: var(--color-black);
-  box-shadow: var(--shadow-orange);
+  /* box-shadow: var(--shadow-orange); */
 }
 
 .linkList {
