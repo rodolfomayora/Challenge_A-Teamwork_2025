@@ -1,0 +1,45 @@
+.ServiceList {
+  --column-gap: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: var(--column-gap);
+  row-gap: 56px;
+  padding-top: 26px;
+  margin-inline: -6px;
+}
+
+.ServiceList > * {
+  --max-items-per-row: 1;
+  --grids: calc(var(--max-items-per-row) - 1);
+  --diff: var(--column-gap) / var(--max-items-per-row);
+  width: calc((100% / var(--max-items-per-row)) - ((var(--diff)) * var(--grids)));
+  display: grid;
+  max-width: 400px;
+}
+
+@media only screen and (min-width:768px) {
+  .ServiceList {
+    --column-gap: 36px;
+    padding-top: 20px;
+    margin-inline: 4px;
+    row-gap: 52px;
+  }
+
+  .ServiceList > * {
+    --max-items-per-row: 2;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .ServiceList {
+    --column-gap: 40px;
+    row-gap: 42px;
+  }
+
+  .ServiceList > * {
+    --max-items-per-row: 3;
+  }
+}

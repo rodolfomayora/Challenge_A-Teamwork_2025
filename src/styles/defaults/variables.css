@@ -1,7 +1,7 @@
 @layer defaults.variables {
   :root {
     /* Design limits */
-    --minMobile : 375px;  /* from: 375px  */
+    --minMobile : 385px;  /* from: 385px  */
     --maxDesktop: 1920px; /* to  : 1920px */
 
     /* Mobile First Approach */
@@ -14,7 +14,7 @@
   :root {
     /* fonts */
     --font-roboto: "Roboto";
-    --font-bebas-neue: "Bebas Neue";
+    /* --font-bebas-neue: "Bebas Neue"; */
     
     /* Colors */
     --color-orange: #fc593b;
@@ -22,6 +22,7 @@
     --color-black: #222222;
     --color-black-dark: #0e0b0b;
     --color-white: #ffffff;
+    --color-white-2: #f6f7f8;
     --color-gray: #4f4d4d;
 
     /* shadows */
