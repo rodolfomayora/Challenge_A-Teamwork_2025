@@ -1,0 +1,18 @@
+.ButtonSection {
+  composes: Button from "@/components/Button/styles.module.css";
+  letter-spacing: -0.3px;
+  word-spacing: 1px;
+  padding-inline: 26px;
+}
+
+@media only screen and (min-width:768px) {
+  .ButtonSection {
+    height: 40px;
+    font-size: 14px;
+    padding-inline: 24px;
+  }
+
+  .ButtonSection::before {
+    content: "APPLY TO "
+  }
+}

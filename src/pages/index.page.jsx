@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { LayoutBase } from '@/layouts/LayoutBase';
+import { Section1 } from './_sections/section1';
 import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 import styles from './styles.module.css';
@@ -18,19 +19,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutBase>
-        <section className={styles.section1}>
-          <Container>
-            <div className={styles.heroContent}>
-              <TagTitle>Welcome to Vrume</TagTitle>
-              <h1 className={styles.mainTitle}>Drive Profits with Targeted Advertising Solutions</h1>
-              <p className={styles.text}>Whether you’re a seasoned marketer or just starting to scale your business, our customized online strategies will accelerate your growth and drive targeted customers straight to your offers.</p>
-              <Button style={{ letterSpacing: "-0.3px", wordSpacing: 1, paddingInline: 26 }}>
-                BECOME AN ADVERTISER!
-              </Button>
-              <img className={styles.heroImage} src="/assets/B&W Man Red.png" alt="hero section" />
-            </div>
-          </Container>
-        </section>
+        
+        <Section1 />
 
         <section>
           <Container>
