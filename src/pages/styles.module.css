@@ -1,0 +1,104 @@
+
+
+.section1 {
+  background-color: var(--color-black-dark);
+  color: var(--color-white);
+}
+
+.heroContent {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  row-gap: 21px;
+  padding-block: 126px;
+}
+
+.heroImage {
+  display: none;
+  width: 400px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+@media only screen and (min-width:1024px) {
+  .heroContent{
+    max-width: 50%;
+  }
+
+  .heroImage {
+    display: revert;
+  }
+}
+
+.tagTitle {
+  display: grid;
+  place-content: center;
+  height: 36px;
+  width: 214px;
+  border-radius: 18px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  background: transparent;
+  border: solid 1px var(--color-orange);
+}
+
+.mainTitle {
+  font-size: 52px;
+  line-height: 0.99;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  letter-spacing: -0.3px;
+  word-spacing: 1px;
+  padding-inline: 26px;
+}
+
+.text {
+  width: 92%;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  word-spacing: -0.8px;
+  line-height: 1.5;
+
+  margin-bottom: 14px;
+}
+
+.content {
+  padding-block: 68px;
+}
+
+.cardGrid {
+  --gap: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.cardGrid > * {
+  --max-items-per-row: 1;
+  --grids: calc(var(--max-items-per-row) - 1);
+  --diff: var(--gap) / var(--max-items-per-row);
+  width: calc((100% / var(--max-items-per-row)) - ((var(--diff)) * var(--grids)));
+
+  /* max-width: 480px; */
+}
+
+@media only screen and (min-width:768px) {
+  .cardGrid > * {
+    --max-items-per-row: 2;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .cardGrid > * {
+    --max-items-per-row: 3;
+  }
+}
