@@ -70,7 +70,18 @@
 }
 
 .content {
+  display: grid;
+  justify-items: center;
+  row-gap: 40px;
   padding-block: 68px;
+}
+
+.title {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
 }
 
 .cardGrid {
@@ -100,5 +111,54 @@
 @media only screen and (min-width:1024px) {
   .cardGrid > * {
     --max-items-per-row: 3;
+  }
+}
+
+
+.stepList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media only screen and (min-width:1024px) {
+  .stepList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+.formSection {
+  display: grid;
+  gap: 40px;
+}
+
+.contactForm {
+  --gap: 20px;
+  display: grid;
+  row-gap: var(--gap);
+}
+
+.contactForm div {
+  display: grid;
+  gap: var(--gap);
+}
+
+.contactForm label {
+  display: grid;
+  row-gap: 10px;
+}
+
+@media only screen and (min-width:768px) {
+  .contactForm div {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .formSection {
+    grid-template-columns: 1fr 1fr;
   }
 }
