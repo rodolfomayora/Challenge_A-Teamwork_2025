@@ -1,6 +1,12 @@
 .Section1 {
-  background-color: var(--color-black-dark);
+  display: grid;
+  align-items: center;
   color: var(--color-white);
+  aspect-ratio: 385 / 744;
+  background-color: var(--color-black-dark);
+  background-image: url("/assets/Vrume banner fallback (Mobile).png");
+  background-size: cover;
+  background-position: center center;
 }
 
 .content {
@@ -34,6 +40,11 @@
 }
 
 @media only screen and (min-width:768px) {
+  .Section1 {
+    aspect-ratio: 768 / 594;
+    background-image: url("/assets/Vrume banner fallback.png");
+  }
+
   .content {
     padding-block: 74px 82px;
   }
@@ -49,6 +60,10 @@
 }
 
 @media only screen and (min-width:1024px) {
+  .Section1 {
+    aspect-ratio: auto;
+  }
+
   .content{
     justify-items: start;
     max-width: 50%;
