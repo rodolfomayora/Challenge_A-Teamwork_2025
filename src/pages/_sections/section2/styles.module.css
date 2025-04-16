@@ -1,3 +1,8 @@
+.Section2 {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
 .content {
   display: grid;
   justify-items: center;

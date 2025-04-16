@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+.Button:hover {
+  background-color: var(--color-orange-dark);
+}
+
 @media only screen and (min-width:1024px) {
   .Button {
     letter-spacing: -0.4px;
