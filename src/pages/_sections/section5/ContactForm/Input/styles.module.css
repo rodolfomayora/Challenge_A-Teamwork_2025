@@ -25,6 +25,10 @@
   font-family: var(--font-roboto);
 }
 
+.input:focus {
+  border-color: var(--color-orange);
+}
+
 @media only screen and (min-width:768px)  {
   .label {
     row-gap: 6px;
