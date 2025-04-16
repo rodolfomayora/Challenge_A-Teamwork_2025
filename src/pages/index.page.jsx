@@ -3,8 +3,8 @@ import { LayoutBase } from '@/layouts/LayoutBase';
 import { Section1 } from './_sections/section1';
 import { Section2 } from './_sections/section2';
 import { Section3 } from './_sections/section3';
+import { Section5 } from './_sections/section5';
 import { Container } from '@/components/Container';
-import { Button } from '@/components/Button';
 import styles from './styles.module.css';
 
 // import Image from "next/image";
@@ -22,7 +22,7 @@ export default function Home() {
         <Section2 />
         <Section3 />
 
-        <section>
+        <section className={styles.Section4}>
           <Container>
             <div className={styles.content}>
             <TagTitle style={{ color: "var(--color-orange)"}}>Our clients love us</TagTitle>
@@ -76,43 +76,7 @@ export default function Home() {
           </Container>
         </section>
 
-        <section style={{ backgroundColor: "var(--color-black-dark)", color: "var(--color-white)" }}>
-          <Container>
-            <div className={styles.content + " " + styles.formSection}>
-              <div style={{ display: 'grid', gap: 40, justifyItems: 'center' }}>
-                <TagTitle>Contact Us</TagTitle>
-                <h2 className={styles.title}>Get Started Today</h2>
-                <p>Ready to elevate your advertising game? Join the hundreds of businesses already driving
-                success with <strong>VRUME’s targeted advertising solutions.</strong> Whether you’re focused on
-                <strong>email ads, Instagram ads,</strong> or <strong>affiliate marketing,</strong> we’ve got the
-                expertise and resources to help you succeed.</p>
-                <Button>APPLY TO BECOME AN ADVERTISER!</Button>
-              </div>
-              
-              <form className={styles.contactForm}>
-                <div>
-                  <label>
-                    <span>First Name</span>
-                    <input type="text" placeholder="Enter Your First Name" />
-                  </label>
-                  <label>
-                    <span>Last Name</span>
-                    <input type="text" placeholder="Enter Your Last Name" />
-                  </label>
-                </div>
-                <label>
-                  <span>Email</span>
-                  <input type="email" placeholder="Email Address" />
-                </label>
-                <label>
-                  <span>Your message (optional)</span>
-                  <textarea placeholder="Write Your Message"></textarea>
-                </label>
-                <Button type="Button">Submit</Button>
-              </form>
-            </div>
-          </Container>
-        </section>
+        <Section5 />
       </LayoutBase>
     </>
   );
