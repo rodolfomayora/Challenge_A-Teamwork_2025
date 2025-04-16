@@ -13,8 +13,8 @@
 @layer defaults.variables {
   :root {
     /* fonts */
-    --font-roboto: "Roboto";
-    /* --font-bebas-neue: "Bebas Neue"; */
+    /* "--font-roboto" DEFINED ON src/fonts */
+    /* "--font-bebas-neue" DEFINED ON src/fonts */
     
     /* Colors */
     --color-orange: #fc593b;

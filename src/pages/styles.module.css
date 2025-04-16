@@ -10,12 +10,6 @@
   border: solid 1px var(--color-orange);
 }
 
-.btn {
-  letter-spacing: -0.3px;
-  word-spacing: 1px;
-  padding-inline: 26px;
-}
-
 .text {
   width: 92%;
   font-size: 17px;
@@ -38,56 +32,8 @@
   text-align: center;
 }
 
-.info {
-  text-align: center;
-}
 
-.cardGrid {
-  --gap: 30px;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--gap);
-}
-
-.cardGrid > * {
-  --max-items-per-row: 1;
-  --grids: calc(var(--max-items-per-row) - 1);
-  --diff: var(--gap) / var(--max-items-per-row);
-  width: calc((100% / var(--max-items-per-row)) - ((var(--diff)) * var(--grids)));
-
-  /* max-width: 480px; */
-}
-
-@media only screen and (min-width:768px) {
-  .cardGrid > * {
-    --max-items-per-row: 2;
-  }
-}
-
-@media only screen and (min-width:1024px) {
-  .cardGrid > * {
-    --max-items-per-row: 3;
-  }
-}
-
-
-.stepList {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-@media only screen and (min-width:1024px) {
-  .stepList {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
-
+/* section 4 */
 .formSection {
   display: grid;
   gap: 40px;

@@ -2,6 +2,7 @@ import Head from "next/head";
 import { LayoutBase } from '@/layouts/LayoutBase';
 import { Section1 } from './_sections/section1';
 import { Section2 } from './_sections/section2';
+import { Section3 } from './_sections/section3';
 import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 import styles from './styles.module.css';
@@ -15,43 +16,11 @@ export default function Home() {
       <Head>
         <title>Home | Vrume</title>
         <meta name="description" content="VRUME home page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutBase>
         <Section1 />
         <Section2 />
-
-        <section style={{ backgroundColor: "var(--color-black)", color: "var(--color-white)" }}>
-          <Container>
-            <div className={styles.content}>
-              <div className={styles.tagTitle}>How Vrume Works</div>
-              <h2 className={styles.title}>Our process is designed to be simple, effective, and ROI-focused.</h2>
-              <ul className={styles.stepList}>
-                <li>
-                  [Step 1]
-                  <h3>Identify Your Audience</h3>
-                  <p>Using our advanced targeting tools, we define target audience based on demographics, behavior, and interests. Whether you’re in business marketing, mobile advertising, or native display ads, we ensure your campaigns hit the mark.</p>
-                </li>
-                <li>
-                  [Step 2]
-                  <h3>Customize Your Campaign</h3>
-                  <p>From ads branding to campaigns on Instagram or network ads, we create tailor-made ads that resonate with your audience, ensuring that every impression counts.</p>
-                </li>
-                <li>
-                  [Step 3]
-                  <h3>Optimize for Conversions</h3>
-                  <p>Continuous monitoring and tracking conversions through detailed analytics help us fine-tune your campaigns, ensuring that your investment continues to generate results. Our expertise in media buying and ads placement ensures that your budget is being spent wisely, leading to maximum returns.</p>
-                </li>
-                <li>
-                  [Step 4]
-                  <h3>Scale Your Success</h3>
-                  <p>Once your campaigns are performing well, we work with you to scale them. Whether it’s ramping up your CPC ads, expanding affiliate partnerships, or exploring new advertising platforms online, we help you grow efficiently and sustainably.</p>
-                </li>
-              </ul>
-            </div>
-          </Container>
-        </section>
+        <Section3 />
 
         <section>
           <Container>

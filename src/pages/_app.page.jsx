@@ -1,14 +1,11 @@
-import localFont from 'next/font/local';
+import { roboto } from '@/fonts/Roboto';
+import { bebasNeue } from '@/fonts/Bebas_Neue';
 import "@/styles/globals.css";
 
-const bebasNeue = localFont({
-  variable: '--font-bebas-neue',
-  src: '../../public/fonts/Bebas_Neue/BebasNeue-Regular.ttf',
-})
-
 export default function App({ Component, pageProps }) {
+  const fonts = [roboto.className, bebasNeue.variable, roboto.variable].join(' ');
   return (
-    <div className={bebasNeue.variable}>
+    <div className={fonts}>
       <Component {...pageProps} />
     </div>
   );
