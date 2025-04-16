@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 export function Section2() {
   return (
-    <section>
+    <section className={styles.Section2}>
       <Container>
         <div className={styles.content}>
           <TagTitleSection>What we do?</TagTitleSection>

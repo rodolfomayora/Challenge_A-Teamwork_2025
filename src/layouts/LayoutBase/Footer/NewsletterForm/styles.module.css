@@ -7,7 +7,7 @@
   display: grid;
   row-gap: 8px;
   font-size: 16px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
 }
 
 .input {
@@ -15,11 +15,20 @@
   height: var(--height);
   border-radius: calc(var(--height) / 2);
   padding-inline: 14px;
+  font-family: var(--font-roboto);
   letter-spacing: 0.4px;
   font-size: 16px;
   border: solid 2px transparent;
   cursor: pointer;
   width: 100%;
+}
+
+.input::placeholder {
+  font-family: var(--font-roboto);
+}
+
+.input:focus {
+  border-color: var(--color-orange);
 }
 
 @media only screen and (min-width:768px) {
