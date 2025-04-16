@@ -1,0 +1,41 @@
+.ContactForm {
+  --gap: 27px;
+  display: grid;
+
+  row-gap: 22px;
+  padding-inline: 5px;
+}
+
+.inputs {
+  display: grid;
+  gap: var(--gap);
+}
+
+.textInputs {
+  display: grid;
+  gap: var(--gap);
+}
+
+
+@media only screen and (min-width:768px) {
+  .ContactForm {
+    row-gap: 20px;
+    padding-inline: 10px;
+  }
+
+  .inputs {
+    row-gap: 25px;
+  }
+
+  .textInputs {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .ContactForm {
+    row-gap: 18px;
+    padding-left: 0;
+  }
+}
