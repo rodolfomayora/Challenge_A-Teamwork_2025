@@ -28,7 +28,7 @@ export function ContactForm() {
           placeholder="Write Your Message"
         />
       </div>
-      <Button type="Button" style={{ height: 44 }}>Submit</Button>
+      <Button type="Button" className={styles.CustomButton}>Submit</Button>
     </form>
   );
 }

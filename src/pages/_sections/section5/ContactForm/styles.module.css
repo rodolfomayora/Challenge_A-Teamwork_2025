@@ -16,6 +16,10 @@
   gap: var(--gap);
 }
 
+.CustomButton {
+  composes: Button from "@/components/Button/styles.module.css";
+  --height: 44px;
+}
 
 @media only screen and (min-width:768px) {
   .ContactForm {
@@ -37,5 +41,9 @@
   .ContactForm {
     row-gap: 18px;
     padding-left: 0;
+  }
+
+  .CustomButton {
+    --height: 42px;
   }
 }
