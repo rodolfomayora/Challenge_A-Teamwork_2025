@@ -4,6 +4,5 @@
 @import "./vendors/normalize.css";
 
 /* defaults */
-@import "./defaults/typography.css";
 @import "./defaults/variables.css";  /* CSS variables (Custom Properties) */
 @import "./defaults/base.css";
