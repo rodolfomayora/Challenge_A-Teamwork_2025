@@ -1,0 +1,158 @@
+.Section3 {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.content {
+  display: grid;
+  justify-items: center;
+  row-gap: 38px;
+  padding-top: 68px;
+  padding-bottom: 120px;
+}
+
+.title {
+  font-size: 43px;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  text-align: center;
+}
+
+.stepList {
+  list-style: none;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 54px;
+  margin-inline: -6px;
+  padding-top: 6px;
+}
+
+.stepList::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  translate: 42px 55px;
+  width: 2px;
+  height: 78%;
+  background-color: var(--color-white-2);
+}
+
+.stepList > * {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 31px;
+}
+
+.stepNumber {
+  position: relative;
+  display: grid;
+  place-items: center center;
+  width: 85px;
+  aspect-ratio: 1 / 1;
+  font-family: var(--font-bebas-neue);
+  font-size: 44px;
+  color: var(--color-white);
+  background-color: var(--color-orange-dark);
+  border-radius: 50%;
+}
+
+.info {
+  display: grid;
+  row-gap: 16px;
+  padding-top: 18px
+}
+
+.stepTitle {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  line-height: 0.94;
+}
+
+.stepText {
+  font-size: 15px;
+  line-height: 1.48;
+}
+
+@media only screen and (min-width:768px) {
+  .content {
+    row-gap: 34px;
+    padding-block: 62px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .stepList {
+    margin-inline: 0;
+    padding-top: 9px;
+    row-gap: 49px;
+  }
+
+  .stepList > * {
+    column-gap: 25px;
+  }
+
+  .info {
+    row-gap: 14px;
+  }
+
+  .stepNumber {
+    width: 80px;
+  }
+
+  .stepTitle {
+    letter-spacing: 1px;
+  }
+
+  .stepText {
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .content {
+    padding-block: 64px 78px;
+    padding-inline: 20px;
+  }
+
+  .title {
+    letter-spacing: 1.6px;
+  }
+
+  .stepList {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+  }
+
+  .stepList:before {
+    left: 50%;
+    translate: -50% 47px;
+    height: 2px;
+    width: 75%;
+  }
+
+  .stepList > * {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: start;
+    row-gap: 34px
+  }
+
+  .info {
+    padding-top: 0;
+  }
+
+  .stepTitle {
+    text-align: center;
+  }
+
+  .stepText {
+    letter-spacing: -0.6px;
+  }
+}
