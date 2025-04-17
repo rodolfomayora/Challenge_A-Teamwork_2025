@@ -10,7 +10,7 @@ import styles from './styles.module.css';
 export function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   const handleToggle = () => setIsExpanded((isExpanded) => !isExpanded);
-
+  const handleClose = () => setIsExpanded(false);
   return (
     <header className={styles.Header}>
       <Container>
@@ -45,7 +45,11 @@ export function Header() {
       </Container>
 
       {/* menu mobile */}
-      <div className={styles.mobileNavigationWrapper} data-expanded={isExpanded}>
+      <div
+        className={styles.mobileNavigationWrapper}
+        data-expanded={isExpanded}
+        onClick={handleClose}  
+      >
         <MobileNavigationMenu />
       </div>
     </header>

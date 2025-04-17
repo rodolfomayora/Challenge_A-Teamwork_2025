@@ -1,19 +1,28 @@
 .Header {
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 10;
   color: var(--color-white);
   background-color: var(--color-black);
   box-shadow: var(--shadow-orange);
 }
 
+.Header > * {
+  position: relative;
+  z-index: 10;
+  background-color: var(--color-black);
+}
+
 .navigation {
   position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 98px;
   padding-right: 18px;
+  background-color: var(--color-black);
 }
 
 .logoWrapper {
@@ -34,17 +43,22 @@
 }
 
 .mobileNavigationWrapper {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 100%;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   background-color: var(--color-black);
   box-shadow: var(--shadow-orange);
+  /* visibility: hidden; */
+  overflow: hidden;
+  translate: 0 -120%;
+  transition: translate 0.3s linear;
 }
 
 .mobileNavigationWrapper[data-expanded="true"] {
-  display: block;
+  /* display: block; */
+  translate: 0 0;
 }
 
 @media only screen and (min-width:768px) {
@@ -77,6 +91,7 @@
     display: none;
   }
 
+  .mobileNavigationWrapper,
   .mobileNavigationWrapper[data-expanded="true"] {
     display: none;
   }
