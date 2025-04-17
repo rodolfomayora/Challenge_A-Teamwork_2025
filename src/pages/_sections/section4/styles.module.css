@@ -1,3 +1,8 @@
+.Section4 {
+  height: 700px;
+  overflow: clip;
+}
+
 .tagTitle {
   display: grid;
   place-content: center;
@@ -10,28 +15,27 @@
   border: solid 1px var(--color-orange);
 }
 
-.text {
-  width: 92%;
-  font-size: 17px;
-  text-align: center;
-  letter-spacing: 0.1px;
-  word-spacing: -0.8px;
-  line-height: 1.5;
-
-  margin-bottom: 14px;
-}
 
 .content {
   display: grid;
-  justify-items: center;
+  /* justify-items: center; */
+  justify-items: start;
   row-gap: 40px;
   padding-block: 68px;
 }
 
 .title {
-  text-align: center;
+  /* text-align: center; */
 }
 
-.Section4 {
-  height: 500px;
+
+.text {
+  width: 92%;
+  font-size: 17px;
+  /* text-align: center; */
+  letter-spacing: 0.1px;
+  word-spacing: -0.8px;
+  line-height: 1.5;
+
+  margin-bottom: 14px;
 }
