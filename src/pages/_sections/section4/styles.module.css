@@ -1,6 +1,6 @@
 .Section4 {
-  height: 700px;
-  overflow: clip;
+  /* height: 700px; */
+  /* overflow: clip; */
 }
 
 .tagTitle {
@@ -22,6 +22,7 @@
   justify-items: start;
   row-gap: 40px;
   padding-block: 68px;
+  /* padding-bottom: 70px; */
 }
 
 .title {
