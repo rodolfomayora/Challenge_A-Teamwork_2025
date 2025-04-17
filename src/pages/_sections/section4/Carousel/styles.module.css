@@ -1,0 +1,123 @@
+.Carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.wrapper {
+  width: min(100%, 1140px);
+  max-width: 1140px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #111 30% 90%,
+    transparent
+  );
+}
+
+.sliderContainer {
+  --animation-speed: 1s; /* exposed to JSX to be overrided */
+  --padding-bottom: 50px;
+  min-height: 0;
+  min-width: 0;
+  padding: 14px 0 24px;
+  padding-bottom: var(--padding-bottom);
+  width: 1264px;
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  /* background-color: rgb(252, 106, 106); */
+}
+
+.sliderContainer :global(.slick-track) {
+  display: flex;
+  align-items: center;
+  will-change: transform, translate;
+}
+
+
+.sliderContainer :global(.slick-slide) {
+  scale: 0.8;
+  opacity: 0.5;
+  will-change: scale, opacity;
+  transition:
+    scale var(--animation-speed) linear,
+    opacity var(--animation-speed) linear;
+}
+
+.sliderContainer :global(.slick-current) {
+  scale: 1;
+  opacity: 1;
+}
+
+/* Button */
+.prev,
+.next {
+  display: none;
+}
+
+@media only screen and (min-width:768px) {
+  .prev,
+  .next {
+    --size: 50px;
+    all: initial;
+    display: inline-grid;
+    place-items: center center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    translate: 0 -65%;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--color-orange-dark);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 30px;
+  }
+  
+  .next {
+    right: 30px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .prev {
+    left: -3.8vw;
+  }
+  
+  .next {
+    right: -3.8vw;
+  }
+}
+
+
+/* Dots */
+.sliderContainer :global(.slick-dots) {
+  bottom: calc((var(--padding-bottom) + 6px) * -1)
+}
+
+.sliderContainer :global(.slick-dots ::before) {
+  content: "";
+  display: none;
+}
+
+.sliderContainer :global(.slick-dots li) {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-gray);
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: all var(--animation-speed) linear;
+}
+
+.sliderContainer :global(.slick-dots li.slick-active) {
+  width: 50px;
+  opacity: 1;
+  background-color: var(--color-orange-dark);
+}
