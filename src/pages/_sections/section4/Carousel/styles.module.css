@@ -1,5 +1,12 @@
+.xd {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
 .wrapper {
   width: min(100%, 1140px);
+  max-width: 1140px;
   position: relative;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -83,6 +90,49 @@
   opacity: 1;
 }
 
+.prev,
+.next {
+  display: none;
+}
+
+@media only screen and (min-width:768px) {
+  .prev,
+  .next {
+    --size: 50px;
+    all: initial;
+    display: inline-grid;
+    place-items: center center;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: var(--color-orange-dark);
+    cursor: pointer;
+  }
+
+  .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    translate: 0 -65%;
+  }
+  
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    translate: 0 -65%;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .prev {
+    left: -3.8vw;
+  }
+  
+  .next {
+    right: -3.8vw;
+  }
+}
 
 /* Prev /  Next buttons */
 /* .sliderContainer :global(.slick-prev),

@@ -8,7 +8,7 @@ export function Section4() {
     <section className={styles.Section4}>
       <Container>
         <div className={styles.content}>
-        <TagTitle className={styles.customTagTitle}>Our clients love us</TagTitle>
+          <TagTitle className={styles.customTagTitle}>Our clients love us</TagTitle>
           <h2 className={styles.title}>What Our Customers Have to Say</h2>
           <Carousel />
         </div>

@@ -6,8 +6,7 @@
   display: grid;
   justify-items: center;
   row-gap: 36px;
-  /* padding-block: 64px; */
-  padding-block: 68px;
+  padding-block: 64px;
 }
 
 .customTagTitle {
