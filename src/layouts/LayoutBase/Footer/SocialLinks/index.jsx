@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './styles.module.css';
 
 export function SocialLinks() {
@@ -11,7 +12,11 @@ export function SocialLinks() {
           rel="external noreferrer noopener"
           aria-label="Facebook"
         >
-          <img src="/icons/facebook.png" />
+          <Image
+            src="/icons/facebook.png"
+            alt="Facebook"
+            width="32" height="32"
+          />
         </a>
       </li>
       <li>
@@ -22,7 +27,11 @@ export function SocialLinks() {
           rel="external noreferrer noopener"
           aria-label="Instragram"
         >
-          <img src="/icons/instagram.png" />
+          <Image
+            src="/icons/instagram.png"
+            alt="Instragram"
+            width="32" height="32"
+          />
         </a>
       </li>
       <li>
@@ -33,7 +42,11 @@ export function SocialLinks() {
           rel="external noreferrer noopener"
           aria-label="LinkeIn"
         >
-          <img src="/icons/linkedin.png" />
+          <Image
+            src="/icons/linkedin.png"
+            alt="LinkeIn"
+            width="32" height="32"
+          />
         </a>
       </li>
       <li>
@@ -44,7 +57,11 @@ export function SocialLinks() {
           rel="external noreferrer noopener"
           aria-label="Twitter-X"
         >
-          <img src="/icons/twitter-x.png" />
+          <Image
+            src="/icons/twitter-x.png"
+            alt="Twitter-X"
+            width="32" height="32"
+          />
         </a>
       </li>
     </ul>

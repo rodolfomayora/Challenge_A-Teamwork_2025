@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Container } from '@/components/Container';
 import { MobileNavigationMenu } from './MobileNavigationMenu';
@@ -18,7 +19,7 @@ export function Header() {
           {/* Vrum logo */}
           <div className={styles.logoWrapper}>
             <Link href="/" aria-label="home page">
-              <img src="/assets/VRUME-white-with-red-dot.png"
+              <Image src="/assets/VRUME-white-with-red-dot.png"
                 className={styles.logo}
                 alt="Vrume Logo"
                 width="140" height="50"
