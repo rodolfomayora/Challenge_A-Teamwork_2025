@@ -6,6 +6,15 @@ import styles from './styles.module.css';
 export function Section1() {
   return (
     <section className={styles.Section1}>
+      <video className={styles.video}
+        width="712" height="400"
+        poster="/assets/Vrume banner fallback.png"
+        autoPlay muted loop
+      >
+        <source src="/assets/Vrume banner Background.webm" type="video/webm" />
+        <source src="/assets/Vrume banner Background.mp4" type="video/mp4" />
+      </video>
+
       <Container>
         <div className={styles.content}>
           <TagTitle>Welcome to Vrume</TagTitle>

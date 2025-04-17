@@ -7,6 +7,12 @@
   background-image: url("/assets/Vrume banner fallback (Mobile).png");
   background-size: cover;
   background-position: center center;
+  position: relative;
+  overflow: clip;
+}
+
+.video {
+  display: none;
 }
 
 .content {
@@ -42,11 +48,24 @@
 @media only screen and (min-width:768px) {
   .Section1 {
     aspect-ratio: 768 / 594;
-    background-image: url("/assets/Vrume banner fallback.png");
+    background-image: none;
+    /* background-image: url("/assets/Vrume banner fallback.png"); */
   }
 
   .content {
     padding-block: 74px 82px;
+  }
+
+  .video {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    aspect-ratio: 712 / 400;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .mainTitle {
@@ -62,6 +81,16 @@
 @media only screen and (min-width:1024px) {
   .Section1 {
     aspect-ratio: auto;
+  }
+
+  .video {
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    aspect-ratio: 712 / 400;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .content{
