@@ -1,40 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Challenge_A-Teamwork_2025
 
-First, run the development server:
+### Setup and run the application locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project uses **NPM** by default
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Install dependencies from `package.json` file using NPM with the following command:
+	
+    `npm install` 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+    Or, Install exact dependencies from `package-lock.json`:
+    
+    `npm ci --include=dev` 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+	
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Start local dev server with the following command
+	
+    `npm run dev`
 
-## Learn More
+<br />
 
-To learn more about Next.js, take a look at the following resources:
+3. Open project on the following URL in the web browser:
+	
+    [http://localhost:3001](http://localhost:3001)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Technical stack used
+
+#### Core
+- **Node** `v18.x` (Runtime environment) - [Documenation](https://nodejs.org/en)
+- **Next.js** `v14.x` (React.js Framework) - [Documentation](https://nextjs.org/blog/next-14)
+- **React.js** `v18.x` (Frontend library for dinamic UI) - [Documentation](https://react.dev/)
+- **CSS Modules** (CSS-in-JS for component styling) - [Documentation](https://github.com/css-modules/css-modules)
+- **react-slick**`v0.x` (Carouse) - [Documentation](https://react-slick.neostack.com/)
+
+<br />
+
+---
+
+### Development Steps
+
+1. [x] Define and install dependencies
+2. [x] Create repository
+3. [x] Config deployment environment on Vercel
+4. [x] Move all assets to source code directory
+5. [x] Config global CSS
+6. [x] Config typographic fonts and initial color variables:
+      ```css
+      --orange: #fc593b;
+      --orange-dark: #c6442c;
+      --black: #222222;
+      --black-dark: #0e0b0b;
+      --white: #ffffff;
+      --gray: #4f4d4d;
+      ```
+
+7. [x] Develop basic layout components (Header & Footer)
+8. [x] Develop required page sections
+9. [x] Secciones, de arriba hacia abajo cada uno en ese mismo orden
+10. [x] Write `README.md` file
+
