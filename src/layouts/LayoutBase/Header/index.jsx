@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Container } from '@/components/Container';
 import { MobileNavigationMenu } from './MobileNavigationMenu';
@@ -9,7 +10,7 @@ import styles from './styles.module.css';
 export function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   const handleToggle = () => setIsExpanded((isExpanded) => !isExpanded);
-
+  const handleClose = () => setIsExpanded(false);
   return (
     <header className={styles.Header}>
       <Container>
@@ -18,7 +19,7 @@ export function Header() {
           {/* Vrum logo */}
           <div className={styles.logoWrapper}>
             <Link href="/" aria-label="home page">
-              <img src="/assets/VRUME-white-with-red-dot.png"
+              <Image src="/assets/VRUME-white-with-red-dot.png"
                 className={styles.logo}
                 alt="Vrume Logo"
                 width="140" height="50"
@@ -44,7 +45,11 @@ export function Header() {
       </Container>
 
       {/* menu mobile */}
-      <div className={styles.mobileNavigationWrapper} data-expanded={isExpanded}>
+      <div
+        className={styles.mobileNavigationWrapper}
+        data-expanded={isExpanded}
+        onClick={handleClose}  
+      >
         <MobileNavigationMenu />
       </div>
     </header>
