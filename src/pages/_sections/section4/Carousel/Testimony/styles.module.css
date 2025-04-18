@@ -1,0 +1,37 @@
+.Testimony {
+  display: grid;
+  place-items: center;
+  /* background-color: rgb(205, 205, 54); */
+}
+
+.card {
+  --content-padding: 20px;
+  position: relative;
+  display: grid;
+  width: 360px;
+  height: auto;
+  padding-block: 48px 34px;
+  padding-inline: 28px;
+  text-align: center;
+  border-bottom: solid 2px var(--color-orange);
+  background: var(--color-white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.content {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.client {
+  font-family: var(--font-bebas-neue);
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.company {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}

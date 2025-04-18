@@ -1,0 +1,12 @@
+.MobileNavigationMenu {
+  background-color: var(--color-black);
+  /* box-shadow: var(--shadow-orange); */
+}
+
+.linkList {
+  list-style: none;
+  padding-block: 32px;
+  display: grid;
+  row-gap: 32px;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+.MobileNavigationButton {
+  all: initial;
+  aspect-ratio: 1 / 1;
+  width: 34px;
+  cursor: pointer;
+}

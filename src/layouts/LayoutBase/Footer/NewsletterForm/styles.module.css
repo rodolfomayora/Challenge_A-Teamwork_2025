@@ -1,0 +1,53 @@
+.NewsletterForm {
+  display: grid;
+  gap: 20px;
+}
+
+.label {
+  display: grid;
+  row-gap: 8px;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+
+.input {
+  --height: 50px;
+  height: var(--height);
+  border-radius: calc(var(--height) / 2);
+  padding-inline: 14px;
+  font-family: var(--font-roboto);
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  border: solid 2px transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+.input::placeholder {
+  font-family: var(--font-roboto);
+}
+
+.input:focus {
+  border-color: var(--color-orange);
+}
+
+@media only screen and (min-width:768px) {
+  .NewsletterForm {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
+  .input {
+    --height: 46px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .NewsletterForm {
+    column-gap: 14px;
+  }
+
+  .input {
+    --height: 46px;
+  }
+}

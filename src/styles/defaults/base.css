@@ -1,0 +1,42 @@
+@layer defaults.base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  *:focus-visible {
+    outline: solid #111111 4px;
+  }
+
+  html {
+    font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+  
+  body {
+    min-height: 100svh;
+    min-width: var(--min-mobile-width);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-bebas-neue)
+  }
+  
+  img {
+    max-inline-size: 100%; /* max-width: 100% */
+    block-size: auto;      /* height: auto */
+  }
+
+  a {
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  button, label, img, a {
+    user-select: none;
+  }
+}

@@ -1,0 +1,51 @@
+.Section2 {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.content {
+  display: grid;
+  justify-items: center;
+  row-gap: 38px;
+  padding-block: 68px;
+}
+
+.title {
+  font-size: 43px;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.57;
+  letter-spacing: 0.4px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+@media only screen and (min-width:768px) {
+  .content {
+    row-gap: 34px;
+    padding-block: 62px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .text {
+    padding-top: 11px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .content {
+    padding-block: 64px;
+  }
+
+  .title {
+    letter-spacing: 1.6px;
+  }
+}
